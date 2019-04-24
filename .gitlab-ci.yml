@@ -1,2 +1,6 @@
 hello_world:
-  script: "echo hello world, in the default 'test' stage"
+  script:
+    - echo "hello world, in the default 'test' stage"
+    - echo $TEST
+    - echo "test an export and the impact on leaking variables"
+    - export
