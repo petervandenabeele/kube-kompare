@@ -1,4 +1,5 @@
 hello_world:
+  image: alpine:latest
   script:
     - echo "hello world, in the default 'test' stage"
     - echo "$TEST and see if the result is masked"
