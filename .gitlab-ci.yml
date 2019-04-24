@@ -2,4 +2,4 @@ hello_world:
   script:
     - echo "hello world, in the default 'test' stage"
     - echo "$TEST and see if the result is masked"
-    - echo "${TEST}"
+    - echo "$TEST2 and see if the result is masked"
