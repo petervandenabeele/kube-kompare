@@ -1,0 +1,2 @@
+hello_world:
+  script: "echo hello world, in the default 'test' stage"
