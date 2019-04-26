@@ -3,6 +3,6 @@ hello_world:
   script:
     - date
     - echo "hello world, in the default 'test' stage"
-    - [ -z "$TEST" ] && echo '$TEST is empty'
+    - if [ -z "$TEST" ]; then echo '$TEST is empty'; fi
     - echo "$TEST and see if the result is masked"
     - echo "$TEST2 and see if the result is masked"
