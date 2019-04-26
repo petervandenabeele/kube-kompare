@@ -1,6 +1,8 @@
 hello_world:
   image: alpine:latest
   script:
+    - date
     - echo "hello world, in the default 'test' stage"
+    - [ -z "$TEST" ] && echo '$TEST is empty'
     - echo "$TEST and see if the result is masked"
     - echo "$TEST2 and see if the result is masked"
