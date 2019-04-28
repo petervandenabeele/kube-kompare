@@ -38,6 +38,18 @@
   these experiments. In production, use more restrictive roles and define
   more restrictive roles for developers that develop on the cluster.
 
+  Also Add the Role `Service Account User` => The role is needed to execute
+  work as a Service Account.
+
+  Also Add the Role `Compute Viewer` => The role is needed for terraform
+  to avoid the error
+
+```
+google_container_cluster.kubernetes-cluster: Error reading instance group manager
+returned as an instance group URL:
+"googleapi: Error 403: Required 'compute.instanceGroupManagers.get' permission ...
+```
+
   Create a key for this service account: `+ CREATE KEY`, choose the JSON
   format. This will download a key to the file kube-kompare-<key-id>.json.
 
